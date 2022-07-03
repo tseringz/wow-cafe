@@ -1,8 +1,5 @@
-import generateJoke from './generateJoke';
+import createHomePage from './home';
 import './style/main.scss';
-import smiley from './assets/smiley-face.png';
+import video from './assets/students-in-cafe.mp4';
 
-const laughImage = document.getElementById('laugh');
-laughImage.src = smiley;
-
-console.log(generateJoke());
+createHomePage();
