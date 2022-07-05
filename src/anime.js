@@ -102,7 +102,6 @@ function navbarCloseAnimation() {
         easing: 'easeInOutSine',
       });
 
-      // menu-heading animation
        //menu heading animation
        anime({
         targets: '.menu-heading',
