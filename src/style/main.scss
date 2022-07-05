@@ -108,7 +108,9 @@ p {
   color: $secondary-color;
   font-size: 1.25em;
 }
-
+a {
+  cursor: pointer;
+}
 p.about {
 
   width: 20em;
@@ -117,8 +119,9 @@ p.about {
   bottom: -10%;
 }
 
-#navbar-nav {
-  position: relative;
+.navbar-nav {
+  position: absolute;
+  top: -100%;
   width: 100vw;
   height: 100vh;
   padding-top: 20px;
@@ -157,6 +160,7 @@ nav {
     color: $secondary-color-black;
 
   }
+
   .white {
     color: $secondary-color;
     
@@ -238,7 +242,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   
-
 a {
 text-decoration: none;
 font-family: "lato", Arial, Helvetica, sans-serif;
@@ -259,6 +262,7 @@ footer {
   background-color: $primary-color;
 
 }
+
 #home-wrapper {
   max-width: 100%;
   padding-left: 20px;
@@ -271,6 +275,88 @@ footer {
   padding-right: 20px;
   padding-bottom: 200px;
   background-color: $complementary-color-pink;
+}
+
+.menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a{
+    text-decoration: none;
+    font-size: 4.25em;
+    font-family: 'lora', Georgia, 'Times New Roman', Times, serif;
+    color: $secondary-color;
+  }
+}
+
+.icon-wrapper {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  cursor: pointer;
+  text-decoration: none;
+
+  .icon-top {
+    width: 50px;
+    height: 2px;
+    background-color: $secondary-color;
+    margin-bottom: 8px;
+  }
+
+  .icon-bottom {
+    width: 50px;
+    height: 2px;
+    background-color: $secondary-color;
+  }
+}
+
+.menu-link-wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-around;
+
+  .list-item.first{
+    overflow: hidden;
+    margin-top: 5%;
+  }
+
+  .list-item.second {
+    overflow: hidden;
+    margin-top: 15%;
+  }
+  
+  .list-item.third {
+    overflow: hidden;
+    margin-top: 25%;
+  }
+  
+  .list-item.forth {
+    overflow: hidden;
+    margin-top: 35%;
+  }
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: 1.625em;
+    font-family: 'lora', Georgia, 'Times New Roman', Times, serif;
+  }
+
+}
+
+.menu-heading {
+    position: absolute;
+    font-family: 'Womack', Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    line-height: 0.7;
+    opacity: 0.6;
+    top: 20%;
+    right: -50%;
+    color: $secondary-color;
+    font-size: 17.9375em;
 }
 
 
