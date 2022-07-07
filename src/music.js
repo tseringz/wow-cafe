@@ -13,8 +13,8 @@ function createMusicPage() {
                          <nav class="navbar">
                         <div class="menu-wrapper">
                         <div class="menu">
+                        <a class="menu-btn white" href="">Home</a>
                         <a class="menu-btn white" href="">Menu</a>
-                        <a class="menu-btn white" href="">Contact</a>
                         </div></div></nav>
                         <div class="contain-wrapper foods">
                         <img class="hero-image left" src="${heroImageLeft}">
