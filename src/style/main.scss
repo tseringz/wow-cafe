@@ -44,14 +44,21 @@ body {
 }
 
 .heading1.food {
-  position: absolute;
-  font-family: 'Womack', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 28.084375em;
-  line-height: 0.8;
   color:$complementary-color-pink;
   z-index: 1;
 }
+
+.heading1.library {
+  color:$complementary-color-mustard;
+  z-index: 1;
+}
+
+.heading1.music {
+  color:$complementary-color-neon;
+  z-index: 1;
+}
+
+
 .heading4 {
   margin-top: 10px;
   position: absolute;
@@ -108,9 +115,11 @@ p {
   color: $secondary-color;
   font-size: 1.25em;
 }
+
 a {
   cursor: pointer;
 }
+
 p.about {
 
   width: 20em;
@@ -274,7 +283,28 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 200px;
+}
+
+.food-container {
+  max-width: 100%;
   background-color: $complementary-color-pink;
+
+}
+
+.library-container {
+  max-width: 100%;
+  background-color: $complementary-color-mustard;
+
+}
+
+.music-container {
+  max-width: 100%;
+  background-color: $complementary-color-neon;
+}
+
+.event-container {
+  max-width: 100%;
+  background-color: $complementary-color-mustard;
 }
 
 .menu-container {

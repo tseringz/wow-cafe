@@ -1,13 +1,13 @@
-import heroImageLeft from './assets/food-on-the-table.jpg';
-import heroImageRight from './assets/coffee-pouring-from-judge.jpg';
-import contentImageLeft from './assets/pizza-coffee-cake.jpg';
-import contentImageRight from './assets/sand-witch.jpg';
+import heroImageLeft from './assets/inside-view-of-cafe.jpg';
+import heroImageRight from './assets/people-in-cafe.jpg';
+import contentImageLeft from './assets/women-reading-books-in-cafe.jpg';
+import contentImageRight from './assets/coffee-at-coffee-table.jpg';
 import footerImage from './assets/top-view-cafe.jpg';
 
 function createLibraryPage() {
     const container = document.getElementById('content');
     const newDiv = document.createElement('div');
-    newDiv.classList.add('food-container');
+    newDiv.classList.add('library-container');
     
     newDiv.innerHTML = `<div class="main-container">
                          <nav class="navbar">
@@ -26,52 +26,53 @@ function createLibraryPage() {
                         <div class="contain-wrapper foods">
                         <div class="image-wrapper">
                         <img class="hero-image right" src="${contentImageLeft}">
-                        <h5 class="heading5 about">ABOUT<br>CAFE</h5>
-                        <p class="about">Wow cafe is located at Sahastradhara road near hill station apartment. The cafe is established in 
-                        June 2021 with a purpose of promoting art and culture through gathering artist and promoting different 
-                        types of art events. It has music studio where artist can records their music with high quality</p></div>
+                        <h5 class="heading5 about">ABOUT<br>Library</h5>
+                        <p class="about">WOw cafe provides library facilities where customer can access to more then 10000 books 
+                        from fictions to novels. we provide both physical and digital access to materials. customer can borrow 
+                        books and use internet facilities as same as normal library. we also provide separate room for readings. 
+                        those who are college students can use our facilities for free.</p></div>
                         <img class="content-image right" src="${contentImageRight}"></div>
                         <div class="info-wrapper">
-                        <h4 class="info">Food &<br>Drinks</h4>
+                        <h4 class="info">Latest<br>Books</h4>
                         <div class="divider top">
-                        <h5>DRINKS</h6>
-                        <h6>CAPICCUINO</h6>
-                        <h6 class="is-thin">109</h6>
+                        <h5>NON FICTION</h6>
+                        <h6>SILENT SPSRING</h6>
+                        <h6 class="is-thin">420</h6>
                         </div>
                         <div class="divider">
-                        <h5>DRINKS</h5>
-                        <h6>EXPRESSO</h6>
-                        <h6 class="is-thin">201</h6></div>
+                        <h5>NON FICTION</h5>
+                        <h6>IN CLOUD BLOOD</h6>
+                        <h6 class="is-thin">350</h6></div>
                         <div class="divider">
-                        <h5>DRINKS</h5>
-                        <h6>ICE CAFFE LATTE</h6>
+                        <h5>FICTION</h5>
+                        <h6>BELOVED</h6>
+                        <h6 class="is-thin">300</h6></div>
+                        <div class="divider">
+                        <h5>FICTION</h5>
+                        <h6>THE KITE RUNNER</h6>
+                        <h6 class="is-thin">400</h6></div>
+                        <div class="divider">
+                        <h5>FICTION</h5>
+                        <h6>DUNE</h6>
+                        <h6 class="is-thin">1200</h6></div>
+                        <div class="divider">
+                        <h5>BIOGRAPHY</h5>
+                        <h6>STEVE JOBS</h6>
                         <h6 class="is-thin">120</h6></div>
-                        <div class="divider">
-                        <h5>DRINKS</h5>
-                        <h6>ICE CAFFE LATTE</h6>
-                        <h6 class="is-thin">120</h6></div>
-                        <div class="divider">
-                        <h5>FOOD</h5>
-                        <h6>FRENCH FRIES</h6>
-                        <h6 class="is-thin">150</h6></div>
-                        <div class="divider">
-                        <h5>DRINKS</h5>
-                        <h6>HOT COFFEE</h6>
-                        <h6 class="is-thin">109</h6></div>
-                        <div class="divider"><h5>FOOD</h5>
-                        <h6>CHICKEN BREAD</h6>
-                        <h6 class="is-thin">250</h6></div>
-                        <div class="divider"><h5>FOOD</h5>
-                        <h6>CHICKEN BREAD</h6>
-                        <h6 class="is-thin">250</h6></div>
-                        <div class="divider"><h5>DRINKS</h5>
-                        <h6>AMERICANO</h6>
-                        <h6 class="is-thin">230</h6></div>
+                        <div class="divider"><h5>NOVEL</h5>
+                        <h6>THE ALCHEMIST</h6>
+                        <h6 class="is-thin">500</h6></div>
+                        <div class="divider"><h5>NOVEL</h5>
+                        <h6>A PASSAGE TO INDIA</h6>
+                        <h6 class="is-thin">300</h6></div>
+                        <div class="divider"><h5>BIOGRAPHY</h5>
+                        <h6>WINGS OF FIRE</h6>
+                        <h6 class="is-thin">400</h6></div>
                         </div>
                         </div>
                         <footer id="footer" class="footer">
                         <div class="contain-wrapper">
-                        <h1 class="heading1 food">WOW <br>&nbsp;CAFE</h1>
+                        <h1 class="heading1 library">WOW <br>&nbsp;CAFE</h1>
                         <img id="video" src="${footerImage}"></div>
                         <div class="social-media">
                         <a class="text-link white" href="">CAREER</a>
