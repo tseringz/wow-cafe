@@ -13,12 +13,12 @@ function createLibraryPage() {
                          <nav class="navbar">
                         <div class="menu-wrapper">
                         <div class="menu">
+                        <a class="menu-btn white" href="">Home</a>
                         <a class="menu-btn white" href="">Menu</a>
-                        <a class="menu-btn white" href="">Contact</a>
                         </div></div></nav>
                         <div class="contain-wrapper foods">
                         <img class="hero-image left" src="${heroImageLeft}">
-                        <h4 class="heading4">WOW<br>&nbsp;CAFE'S<br>&nbsp;&nbsp;FOOD<br>&nbsp;&nbsp;&nbsp;& DRINKS</h4>
+                        <h4 class="heading4">WOW<br>&nbsp;CAFE'S<br>&nbsp;&nbsp;LIBRARY<br></h4>
                         <img class="hero-image right" src="${heroImageRight}"></div>
                         <p>Food is a huge part of every culture. Aside from needing it to survive, the time spent enjoying meals 
                         brings people together to share their lives and stories. From gathering around camp fires to formal dinners, 
@@ -26,7 +26,7 @@ function createLibraryPage() {
                         <div class="contain-wrapper foods">
                         <div class="image-wrapper">
                         <img class="hero-image right" src="${contentImageLeft}">
-                        <h5 class="heading5 about">ABOUT<br>Library</h5>
+                        <h5 class="heading5 about">ABOUT<br>LIBRARY</h5>
                         <p class="about">WOw cafe provides library facilities where customer can access to more then 10000 books 
                         from fictions to novels. we provide both physical and digital access to materials. customer can borrow 
                         books and use internet facilities as same as normal library. we also provide separate room for readings. 

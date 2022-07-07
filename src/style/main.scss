@@ -58,6 +58,10 @@ body {
   z-index: 1;
 }
 
+.heading1.event {
+  color:$primary-color;
+  z-index: 1;
+}
 
 .heading4 {
   margin-top: 10px;
@@ -272,6 +276,14 @@ footer {
 
 }
 
+.footer.black {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $secondary-color-black;
+}
+
 #home-wrapper {
   max-width: 100%;
   padding-left: 20px;
@@ -304,7 +316,7 @@ footer {
 
 .event-container {
   max-width: 100%;
-  background-color: $complementary-color-mustard;
+  background-color: $primary-color;
 }
 
 .menu-container {

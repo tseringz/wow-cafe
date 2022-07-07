@@ -1,31 +1,33 @@
-import heroImageLeft from './assets/artist-adjusting-sound.jpg';
-import heroImageRight from './assets/girl-singing-song.jpg';
-import contentImageLeft from './assets/girl-singing-on-the-chair.jpg';
-import contentImageRight from './assets/artist-singing-on-the-mic.jpg';
+import heroImageLeft from './assets/event-held-in-musume.jpg';
+import heroImageRight from './assets/exhibition-event.jpg';
+import contentImageLeft from './assets/girls-at-musume.jpg';
+import contentImageRight from './assets/people-enjoying-art-exhibition.jpg';
 import footerImage from './assets/top-view-cafe.jpg';
 
 function createEventsPage() {
     const container = document.getElementById('content');
     const newDiv = document.createElement('div');
-    newDiv.classList.add('music-container');
+    newDiv.classList.add('event-container');
     
     newDiv.innerHTML = `<div class="main-container">
                          <nav class="navbar">
                         <div class="menu-wrapper">
                         <div class="menu">
+                        <a class="menu-btn white" href="">Home</a>
                         <a class="menu-btn white" href="">Menu</a>
-                        <a class="menu-btn white" href="">Contact</a>
                         </div></div></nav>
                         <div class="contain-wrapper foods">
                         <img class="hero-image left" src="${heroImageLeft}">
-                        <h4 class="heading4">WOW<br>&nbsp;CAFE'S<br>&nbsp;&nbsp;MUSIC<br>&nbsp;&nbsp;&nbsp;& STUDIO</h4>
+                        <h4 class="heading4">WOW<br>&nbsp;CAFE'S<br>&nbsp;&nbsp;EVENTS</h4>
                         <img class="hero-image right" src="${heroImageRight}"></div>
-                        <p>LIFE, HE REALISE, WAS MUCH LIKE A SONG. IN THE BEGINNING THERE IS MYSTERY, IN THE END THERE IS CONFIRMATION, 
-                        BUT IT’S IN THE MIDDLE WHERE ALL THE EMOTION RESIDES TO MAKE THE WHOLE THING WORTHWHILE. </p>
+                        <p>The Antichrist will be the infernal prince again for the third and last time... so many 
+                        evils shall be committed by the means of Satan, the infernal Prince, that almost the entire 
+                        world shall be found undone and desolate. Before these events happen, many rare birds will cry in 
+                        the air, 'Now! Now!' and sometime later will vanish.</p>
                         <div class="contain-wrapper foods">
                         <div class="image-wrapper">
                         <img class="hero-image right" src="${contentImageLeft}">
-                        <h5 class="heading5 about">ABOUT<br>STUDIO</h5>
+                        <h5 class="heading5 about">ABOUT<br>EVENTS</h5>
                         <p class="about">A library is a collection of materials, books or media that are accessible 
                         for use and not just for display purposes. A library provides physical (hard copies) or digital 
                         access (soft copies) materials, and may be a physical location or a virtual space, or both. A 
@@ -70,9 +72,9 @@ function createEventsPage() {
                         <h6 class="is-thin">40 SONGS</h6></div>
                         </div>
                         </div>
-                        <footer id="footer" class="footer">
+                        <footer id="footer" class="footer black">
                         <div class="contain-wrapper">
-                        <h1 class="heading1 music">WOW <br>&nbsp;CAFE</h1>
+                        <h1 class="heading1 event">WOW <br>&nbsp;CAFE</h1>
                         <img id="video" src="${footerImage}"></div>
                         <div class="social-media">
                         <a class="text-link white" href="">CAREER</a>
