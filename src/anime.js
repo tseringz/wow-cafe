@@ -53,15 +53,13 @@
         loop: false,
         easing: 'easeInOutSine',
       });
-
       //menu heading animation
       anime({
         targets: '.menu-heading',
         translateX: '-100%',
         easing: 'easeInOutExpo',
         duration: 2000,
-      });
-      
+      }); 
 };
 
 function navbarCloseAnimation() {

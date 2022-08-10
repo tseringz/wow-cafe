@@ -1,14 +1,15 @@
 import video from './assets/students-in-cafe.mp4';
+import createNavbar from './navbar';
 
 function createHomePage() {
-    
+    createNavbar();
     const container = document.getElementById('content');
     const newDiv = document.createElement('div');
     newDiv.setAttribute('id', 'home-wrapper');
-    newDiv.innerHTML = `<nav class="navbar">
+    newDiv.innerHTML = `<nav class="navbar-home">
                         <div class="menu-wrapper">
                         <div class="menu">
-                        <a class="menu-btn" href="">Menu</a>
+                        <a class="menu-home" href="">Menu</a>
                         <a href="">Reservation</a>
                         <a href="">Contact</a>
                         </div></div></nav>
@@ -26,7 +27,6 @@ function createHomePage() {
                         `;
 
     container.appendChild(newDiv);
-
 }
 
 export default createHomePage;

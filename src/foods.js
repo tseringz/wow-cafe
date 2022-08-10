@@ -3,19 +3,14 @@ import heroImageRight from './assets/coffee-pouring-from-judge.jpg';
 import contentImageLeft from './assets/pizza-coffee-cake.jpg';
 import contentImageRight from './assets/sand-witch.jpg';
 import footerImage from './assets/top-view-cafe.jpg';
+import { headingAnimation, navbarAnimation, navbarCloseAnimation } from './anime';
+import createNavbar from './navbar';
+
 
 function createFoodPage() {
-    const container = document.getElementById('content');
     const newDiv = document.createElement('div');
     newDiv.classList.add('food-container');
-    
     newDiv.innerHTML = `<div class="main-container">
-                         <nav class="navbar">
-                        <div class="menu-wrapper">
-                        <div class="menu">
-                        <a class="home-btn white" href="">Home</a>
-                        <a class="menu-btn white" href="">Menu</a>
-                        </div></div></nav>
                         <div class="contain-wrapper foods">
                         <img class="hero-image left" src="${heroImageLeft}">
                         <h4 class="heading4">WOW<br>&nbsp;CAFE'S<br>&nbsp;&nbsp;FOOD<br>&nbsp;&nbsp;&nbsp;& DRINKS</h4>
@@ -83,8 +78,7 @@ function createFoodPage() {
                         </footer>
                         `;
 
-    container.appendChild(newDiv);
-
+    return newDiv;
 }
 
 export default createFoodPage;

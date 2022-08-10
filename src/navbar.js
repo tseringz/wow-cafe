@@ -1,6 +1,6 @@
 // Wrap every letter in a span
 function createNavbar() {
-    const container = document.getElementById('content');
+    const navWrapper = document.getElementById('navbar-wrapper');
     const content = document.getElementById('home-wrapper');
     const newDiv = document.createElement("div");
     newDiv.classList.add('navbar-nav');
@@ -15,10 +15,11 @@ function createNavbar() {
                         <div class="list-item third"><a class="text-link third" href="">EVENTS</a></div>
                         <div class="list-item forth"><a class="text-link forth" href="">MUSIC STUDIO</a></div></div>
                         <h2 class="menu-heading">WOW<br>&nbsp;CAFE</h2>
-
                         </div>`;
     
-    container.appendChild(newDiv);
+    navWrapper.appendChild(newDiv);
 
 }
 export default createNavbar;
+
+

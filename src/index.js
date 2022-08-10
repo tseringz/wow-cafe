@@ -7,62 +7,20 @@ import createEventsPage from './events';
 import { headingAnimation, navbarAnimation, navbarCloseAnimation } from './anime';
 import './style/main.scss';
 
-// 
+//
 createHomePage();
 headingAnimation();
-createNavbar();
-
-const menuItems = document.querySelector('.menu-btn');
-
-function navigateLink(){
-    const navLinks = document.querySelectorAll('.list-item');
-    const homePage = document.getElementById('home-wrapper');
-    const foodPage = document.getElementById('home-wrapper');
-    const libraryPage = document.getElementById('home-wrapper');
-    const musicPage = document.getElementById('home-wrapper');
-    const eventsPage = document.getElementById('home-wrapper');
-    navLinks.forEach((navLink, index) => {
-        navLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            if(index === 0) {
-                homePage.remove();
-                libraryPage.remove();
-                musicPage.remove();
-                eventsPage.remove();
-                navbarCloseAnimation();
-                createFoodPage();
-                console.log(navLink);
-            } else if (index === 1) {
-                homePage.remove();
-                foodPage.remove();
-                musicPage.remove();
-                eventsPage.remove();
-                navbarCloseAnimation();
-                createLibraryPage();
-
-            } else if (index === 2) {
-                homePage.remove();
-                foodPage.remove();
-                libraryPage.remove();
-                musicPage.remove();
-                navbarCloseAnimation();
-                createEventsPage();
-
-            } else {
-                homePage.remove();
-                foodPage.remove();
-                libraryPage.remove();
-                eventsPage.remove();
-                navbarCloseAnimation();
-                createMusicPage();
-
-            }
-            
-        });
-    });
-
-}
-navigateLink();
+const menuItems = document.querySelector('.menu-home');
+const navLinks = document.querySelectorAll('.list-item');
+const homePage = document.getElementById('home-wrapper');
+const foodPage = document.querySelector('.food-container');
+const libraryPage = document.getElementById('home-wrapper');
+const musicPage = document.getElementById('home-wrapper');
+const eventsPage = document.getElementById('home-wrapper');
+const container = document.getElementById('content');
+const navbar = document.querySelector('.navbar');
+const homeBtn = document.querySelector('.home-btn');
+const menuBtn = document.querySelector('.menu-btn');
 
 
 function openMenu(){
@@ -70,6 +28,12 @@ function openMenu(){
         e.preventDefault();
         navbarAnimation();
     });
+
+    menuBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        navbarAnimation();
+    });
+
 
 }
 openMenu();
@@ -83,6 +47,36 @@ function closeMenu() {
 
 }
 closeMenu();
+
+function navigateLink(){
+    navLinks.forEach((navLink, index) => {
+        navLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            navbar.style.display = 'flex';
+            container.textContent = '';
+            navbarCloseAnimation();
+
+            if(index === 0) {
+                container.appendChild(createFoodPage());
+                console.log(navLink);
+            } else if (index === 1) {
+                container.appendChild(createLibraryPage());
+            } else if (index === 2) {
+                container.appendChild(createEventsPage());
+
+            } else {
+               container.appendChild(createMusicPage());
+            }
+            
+        });
+    });
+
+}
+navigateLink();
+
+
+
+
 
 
 

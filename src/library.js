@@ -5,7 +5,6 @@ import contentImageRight from './assets/coffee-at-coffee-table.jpg';
 import footerImage from './assets/top-view-cafe.jpg';
 
 function createLibraryPage() {
-    const container = document.getElementById('content');
     const newDiv = document.createElement('div');
     newDiv.classList.add('library-container');
     
@@ -83,9 +82,10 @@ function createLibraryPage() {
                         </div>
                         </footer>
                         `;
-
-    container.appendChild(newDiv);
+    return newDiv;
 
 }
 
 export default createLibraryPage;
+
+

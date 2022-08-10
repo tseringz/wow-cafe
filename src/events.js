@@ -13,7 +13,7 @@ function createEventsPage() {
                          <nav class="navbar">
                         <div class="menu-wrapper">
                         <div class="menu">
-                        <a class="menu-btn white" href="">Home</a>
+                        <a class="home-btn white" href="">Home</a>
                         <a class="menu-btn white" href="">Menu</a>
                         </div></div></nav>
                         <div class="contain-wrapper foods">

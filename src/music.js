@@ -8,19 +8,18 @@ function createMusicPage() {
     const container = document.getElementById('content');
     const newDiv = document.createElement('div');
     newDiv.classList.add('music-container');
-    
     newDiv.innerHTML = `<div class="main-container">
                          <nav class="navbar">
                         <div class="menu-wrapper">
                         <div class="menu">
-                        <a class="menu-btn white" href="">Home</a>
+                        <a class="menu-home white" href="">Home</a>
                         <a class="menu-btn white" href="">Menu</a>
                         </div></div></nav>
                         <div class="contain-wrapper foods">
                         <img class="hero-image left" src="${heroImageLeft}">
                         <h4 class="heading4">WOW<br>&nbsp;CAFE'S<br>&nbsp;&nbsp;MUSIC<br>&nbsp;&nbsp;&nbsp;& STUDIO</h4>
                         <img class="hero-image right" src="${heroImageRight}"></div>
-                        <p>LIFE, HE REALISE, WAS MUCH LIKE A SONG. IN THE BEGINNING THERE IS MYSTERY, IN THE END THERE IS CONFIRMATION, 
+                        <p>LIFE, HE REAlIZE, WAS MUCH LIKE A SONG. IN THE BEGINNING THERE IS MYSTERY, IN THE END THERE IS CONFIRMATION, 
                         BUT IT’S IN THE MIDDLE WHERE ALL THE EMOTION RESIDES TO MAKE THE WHOLE THING WORTHWHILE. </p>
                         <div class="contain-wrapper foods">
                         <div class="image-wrapper">
@@ -83,9 +82,7 @@ function createMusicPage() {
                         </div>
                         </footer>
                         `;
-
     container.appendChild(newDiv);
-
 }
 
 export default createMusicPage;
