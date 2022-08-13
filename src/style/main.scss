@@ -194,12 +194,10 @@ nav {
   margin-left: 250px;
   width: 19.6875em;
   max-width: 100%;
-
 }
 
 .info-wrapper {
   padding-top: 35em;
-
 }
 
 
@@ -210,7 +208,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid $secondary-color;
-
 }
 
 .divider.top {
@@ -227,6 +224,10 @@ nav {
 
 .image-wrapper {
   margin-top: 400px;
+}
+
+.menu-container,.navbar-home {
+  z-index: 9999;
 }
 
 .contain-wrapper {
@@ -315,7 +316,33 @@ footer {
   max-width: 100%;
   background-color: $complementary-color-mustard;
   padding-top: 150px;
+}
 
+.contact-container {
+  max-width: 100%;
+  background-color: $primary-color;
+  padding-top: 150px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  line-height: 45px;
+}
+
+.info-visit {
+  margin-bottom: 20px;
+}
+
+#googleMap {
+  margin-top: 50px;
+}
+
+#googleMap > p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  font-size: 1.6em;
+  font-weight: 500;
 }
 
 .music-container {

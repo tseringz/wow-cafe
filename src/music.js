@@ -5,7 +5,6 @@ import contentImageRight from './assets/artist-singing-on-the-mic.jpg';
 import footerImage from './assets/top-view-cafe.jpg';
 
 function createMusicPage() {
-    const container = document.getElementById('content');
     const newDiv = document.createElement('div');
     newDiv.classList.add('music-container');
     newDiv.innerHTML = `<div class="main-container">
@@ -82,7 +81,8 @@ function createMusicPage() {
                         </div>
                         </footer>
                         `;
-    container.appendChild(newDiv);
+    return newDiv;
 }
 
 export default createMusicPage;
+

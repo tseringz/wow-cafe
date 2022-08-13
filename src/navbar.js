@@ -5,7 +5,7 @@ function createNavbar() {
     const newDiv = document.createElement("div");
     newDiv.classList.add('navbar-nav');
     newDiv.innerHTML = `<div class='container'>
-                        <div class="menu-container"><a href="">Reservation</a></div>
+                        <div class="menu-container"><a href="https://form.jotform.com/222239259686467" target="_blank">Reservation</a></div>
                         <a class="icon-wrapper">
                         <div class="icon-top"></div>
                         <div class="icon-bottom"></div></a>

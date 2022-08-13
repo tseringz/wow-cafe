@@ -10,8 +10,8 @@ function createHomePage() {
                         <div class="menu-wrapper">
                         <div class="menu">
                         <a class="menu-home" href="">Menu</a>
-                        <a href="">Reservation</a>
-                        <a href="">Contact</a>
+                        <a href="https://form.jotform.com/222239259686467" target="_blank">Reservation</a>
+                        <a class="contact" href="">Contact</a>
                         </div></div></nav>
                         <div class="contain-wrapper home">
                         <h1 class="heading1 home"><span class="word">WOW</span><br>&nbsp;<span class="word">CAFE</span></h1>

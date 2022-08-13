@@ -25,7 +25,7 @@
         duration: 2000,
       });
       // humberger menu animation
-      anime({
+    anime({
         targets: '.icon-top',
         translateY: 4,
         rotate: 45,
@@ -34,7 +34,7 @@
         delay: 500
       });
 
-      anime({
+    anime({
         targets: '.icon-bottom',
         translateY: -4,
         rotate: -45,
@@ -99,7 +99,6 @@ function navbarCloseAnimation() {
         loop: false,
         easing: 'easeInOutSine',
       });
-
        //menu heading animation
        anime({
         targets: '.menu-heading',

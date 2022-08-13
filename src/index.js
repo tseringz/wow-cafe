@@ -1,5 +1,6 @@
 import createNavbar from './navbar';
 import createHomePage from './home';
+import createContactPage from './contact';
 import createFoodPage from './foods';
 import createMusicPage from './music';
 import createLibraryPage from './library';
@@ -10,17 +11,15 @@ import './style/main.scss';
 //
 createHomePage();
 headingAnimation();
+
 const menuItems = document.querySelector('.menu-home');
 const navLinks = document.querySelectorAll('.list-item');
-const homePage = document.getElementById('home-wrapper');
-const foodPage = document.querySelector('.food-container');
-const libraryPage = document.getElementById('home-wrapper');
-const musicPage = document.getElementById('home-wrapper');
-const eventsPage = document.getElementById('home-wrapper');
 const container = document.getElementById('content');
 const navbar = document.querySelector('.navbar');
 const homeBtn = document.querySelector('.home-btn');
 const menuBtn = document.querySelector('.menu-btn');
+const menuBar = document.querySelector('.icon-wrapper');
+const contactButton = document.querySelector('.contact');
 
 
 function openMenu(){
@@ -39,7 +38,6 @@ function openMenu(){
 openMenu();
 
 function closeMenu() {
-    const menuBar = document.querySelector('.icon-wrapper');
     menuBar.addEventListener('click', function(e){
         e.preventDefault();
         navbarCloseAnimation();
@@ -71,8 +69,25 @@ function navigateLink(){
         });
     });
 
+    homeBtn.addEventListener('click', function(e) { 
+        e.preventDefault();
+        navbar.style.display = 'none';
+         container.textContent = '';
+         createHomePage();
+
+    });
+
+    contactButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        navbar.style.display = 'flex';
+        container.textContent = '';
+        container.appendChild(createContactPage());
+    });
+
 }
 navigateLink();
+
+
 
 
 
