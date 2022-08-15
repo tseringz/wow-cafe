@@ -18,6 +18,7 @@ function createNavbar() {
                         </div>`;
     
     navWrapper.appendChild(newDiv);
+    return navWrapper;
 
 }
 export default createNavbar;

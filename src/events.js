@@ -77,11 +77,11 @@ function createEventsPage() {
                         <h1 class="heading1 event">WOW <br>&nbsp;CAFE</h1>
                         <img id="video" src="${footerImage}"></div>
                         <div class="social-media">
-                        <a class="text-link white" href="">CAREER</a>
-                        <a class="text-link white" href="">FACEBOOK</a>
-                        <a class="text-link white" href="">INSTAGRAM</a>
-                        <a class="text-link white" href="">PRIVATE POLICY</a>
-                        <a class="text-link white" href="">BOOKS</a>
+                        <a class="text-link white" href="https://careers.swiggy.com/#/" target="_blank">CAREER</a>
+                        <a class="text-link white" href="https://www.facebook.com/login.php" target="_blank">FACEBOOK</a>
+                        <a class="text-link white" href="https://www.instagram.com/accounts/login/" target="_blank">INSTAGRAM</a>
+                        <a class="text-link white" href="https://www.swiggy.com/privacy-policy" target="_blank">PRIVATE POLICY</a>
+                        <a class="text-link white" href="https://www.amazon.in/books/s?k=books" target="_blank">BOOKS</a>
                         </div>
                         </footer>
                         `;

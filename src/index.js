@@ -9,84 +9,88 @@ import { headingAnimation, navbarAnimation, navbarCloseAnimation } from './anime
 import './style/main.scss';
 
 //
-createHomePage();
-headingAnimation();
-
-const menuItems = document.querySelector('.menu-home');
-const navLinks = document.querySelectorAll('.list-item');
-const container = document.getElementById('content');
-const navbar = document.querySelector('.navbar');
+const navContainer = document.getElementById('navbar-wrapper');
+let container = document.getElementById('content');
+let navbar = document.querySelector('.navbar');
 const homeBtn = document.querySelector('.home-btn');
-const menuBtn = document.querySelector('.menu-btn');
-const menuBar = document.querySelector('.icon-wrapper');
-const contactButton = document.querySelector('.contact');
+let navLinks = document.querySelectorAll('.list-item');
 
 
-function openMenu(){
-    menuItems.addEventListener('click', function(e){
-        e.preventDefault();
-        navbarAnimation();
-    });
+function homePageLoader() {
+    createNavbar();
+    createHomePage();
+    headingAnimation();
+    const menuItems = document.querySelector('.menu-home');
+    navLinks = document.querySelectorAll('.list-item');
+    container = document.getElementById('content');
+    navbar = document.querySelector('.navbar');
+    const  menuBtn = document.querySelector('.menu-btn');
+    const menuBar = document.querySelector('.icon-wrapper');
+    const contactButton = document.querySelector('.contact');
 
-    menuBtn.addEventListener('click', function(e){
-        e.preventDefault();
-        navbarAnimation();
-    });
-
-
-}
-openMenu();
-
-function closeMenu() {
-    menuBar.addEventListener('click', function(e){
-        e.preventDefault();
-        navbarCloseAnimation();
-    });
-
-}
-closeMenu();
-
-function navigateLink(){
-    navLinks.forEach((navLink, index) => {
-        navLink.addEventListener('click', function(e) {
+    function navigateLink(){
+        contactButton.addEventListener('click', function(e) {
             e.preventDefault();
             navbar.style.display = 'flex';
             container.textContent = '';
-            navbarCloseAnimation();
-
-            if(index === 0) {
-                container.appendChild(createFoodPage());
-                console.log(navLink);
-            } else if (index === 1) {
-                container.appendChild(createLibraryPage());
-            } else if (index === 2) {
-                container.appendChild(createEventsPage());
-
-            } else {
-               container.appendChild(createMusicPage());
-            }
-            
+            container.appendChild(createContactPage());
         });
-    });
+        navLinks.forEach((navLink, index) => {
+            navLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                navbar.style.display = 'flex';
+                container.textContent = '';
+                navbarCloseAnimation();
+    
+                if(index === 0) {
+                    container.appendChild(createFoodPage());
+                    console.log(navLink);
+                } else if (index === 1) {
+                    container.appendChild(createLibraryPage());
+                } else if (index === 2) {
+                    container.appendChild(createEventsPage());
+    
+                } else {
+                   container.appendChild(createMusicPage());
+                }
+                
+            });
+        });
+    
+    }
+    navigateLink();
 
-    homeBtn.addEventListener('click', function(e) { 
-        e.preventDefault();
-        navbar.style.display = 'none';
-         container.textContent = '';
-         createHomePage();
+    function openMenu(){
+        menuItems.addEventListener('click', function(e){
+            e.preventDefault();
+            navbarAnimation();
+        });
+    
+        menuBtn.addEventListener('click', function(e){
+            e.preventDefault();
+            navbarAnimation();
+        });
+    }
+    openMenu();
 
-    });
-
-    contactButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        navbar.style.display = 'flex';
-        container.textContent = '';
-        container.appendChild(createContactPage());
-    });
-
+    function closeMenu() {
+        menuBar.addEventListener('click', function(e){
+            e.preventDefault();
+            navbarCloseAnimation();
+        });
+    
+    }
+    closeMenu();
 }
-navigateLink();
+homePageLoader();
 
+homeBtn.addEventListener('click', function(e) { 
+    e.preventDefault();
+    navbar.style.display = 'none';
+    container.textContent = '';
+    navContainer.textContent = '';
+    homePageLoader();
+});
 
 
 
