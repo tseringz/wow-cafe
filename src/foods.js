@@ -3,8 +3,6 @@ import heroImageRight from './assets/coffee-pouring-from-judge.jpg';
 import contentImageLeft from './assets/pizza-coffee-cake.jpg';
 import contentImageRight from './assets/sand-witch.jpg';
 import footerImage from './assets/top-view-cafe.jpg';
-import { headingAnimation, navbarAnimation, navbarCloseAnimation } from './anime';
-import createNavbar from './navbar';
 
 
 function createFoodPage() {
@@ -77,7 +75,6 @@ function createFoodPage() {
                         </div>
                         </footer>
                         `;
-
     return newDiv;
 }
 

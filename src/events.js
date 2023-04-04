@@ -10,7 +10,7 @@ function createEventsPage() {
     newDiv.classList.add('event-container');
     
     newDiv.innerHTML = `<div class="main-container">
-                         <nav class="navbar">
+                        <nav class="navbar">
                         <div class="menu-wrapper">
                         <div class="menu">
                         <a class="home-btn white" href="">Home</a>

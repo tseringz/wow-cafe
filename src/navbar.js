@@ -1,7 +1,6 @@
 // Wrap every letter in a span
 function createNavbar() {
     const navWrapper = document.getElementById('navbar-wrapper');
-    const content = document.getElementById('home-wrapper');
     const newDiv = document.createElement("div");
     newDiv.classList.add('navbar-nav');
     newDiv.innerHTML = `<div class='container'>

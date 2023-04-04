@@ -1,11 +1,9 @@
 import video from './assets/students-in-cafe.mp4';
-import createNavbar from './navbar';
 
-function createHomePage() {
-    const container = document.getElementById('content');
-    const newDiv = document.createElement('div');
-    newDiv.setAttribute('id', 'home-wrapper');
-    newDiv.innerHTML = `<nav class="navbar-home">
+function createHeroPage() {
+    const hero = document.createElement('div');
+    hero.setAttribute('id', 'home-wrapper');
+    hero.innerHTML = `<nav class="navbar-home">
                         <div class="menu-wrapper">
                         <div class="menu">
                         <a class="menu-home">Menu</a>
@@ -13,8 +11,8 @@ function createHomePage() {
                         <a class="contact">Contact</a>
                         </div></div></nav>
                         <div class="contain-wrapper home">
-                        <h1 class="heading1 home"><span class="word">WOW</span><br>&nbsp;<span class="word">CAFE</span></h1>
-                        <video id="video" width="200" height="400"  autoplay loop="true">
+                        <h1 class="heading1 home"><span class="word">VOW</span><br>&nbsp;<span class="word">CAFE</span></h1>
+                        <video id="video" width="200" height="400"  autoplay="true" loop="true">
                         <source src="${video}" type="video/mp4"></video></div>
                         <div class="social-media">
                         <a class="text-link" href="https://careers.swiggy.com/#/" target="_blank">CAREER</a>
@@ -24,9 +22,7 @@ function createHomePage() {
                         <a class="text-link" href="https://www.amazon.in/books/s?k=books" target="_blank">BOOKS</a>
                         </div>
                         `;
-
-    container.appendChild(newDiv);
-    return container;
+    return hero;
 }
 
-export default createHomePage;
+export default createHeroPage;
