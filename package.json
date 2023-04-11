@@ -1,11 +1,14 @@
 {
+  "homepage": "http://tseringz.github.io/wow-cafe",
   "name": "wow-cafe",
   "version": "1.0.0",
   "description": "The restaurant page - The Odin Project",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
