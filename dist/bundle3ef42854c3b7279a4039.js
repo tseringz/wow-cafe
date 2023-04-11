@@ -207,10 +207,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_pizza_coffee_cake_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/pizza-coffee-cake.jpg */ "./src/assets/pizza-coffee-cake.jpg");
 /* harmony import */ var _assets_sand_witch_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/sand-witch.jpg */ "./src/assets/sand-witch.jpg");
 /* harmony import */ var _assets_top_view_cafe_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/top-view-cafe.jpg */ "./src/assets/top-view-cafe.jpg");
-/* harmony import */ var _anime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./anime */ "./src/anime.js");
-/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./navbar */ "./src/navbar.js");
-
-
 
 
 
@@ -239,20 +235,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _assets_students_in_cafe_mp4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/students-in-cafe.mp4 */ "./src/assets/students-in-cafe.mp4");
-/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ "./src/navbar.js");
 
 
-
-function createHomePage() {
-  var container = document.getElementById('content');
-  var newDiv = document.createElement('div');
-  newDiv.setAttribute('id', 'home-wrapper');
-  newDiv.innerHTML = "<nav class=\"navbar-home\">\n                        <div class=\"menu-wrapper\">\n                        <div class=\"menu\">\n                        <a class=\"menu-home\">Menu</a>\n                        <a href=\"https://form.jotform.com/222239259686467\" target=\"_blank\">Reservation</a>\n                        <a class=\"contact\">Contact</a>\n                        </div></div></nav>\n                        <div class=\"contain-wrapper home\">\n                        <h1 class=\"heading1 home\"><span class=\"word\">WOW</span><br>&nbsp;<span class=\"word\">CAFE</span></h1>\n                        <video id=\"video\" width=\"200\" height=\"400\" autoplay loop=\"true\">\n                        <source src=\"".concat(_assets_students_in_cafe_mp4__WEBPACK_IMPORTED_MODULE_0__, "\" type=\"video/mp4\"></video></div>\n                        <div class=\"social-media\">\n                        <a class=\"text-link\" href=\"https://careers.swiggy.com/#/\" target=\"_blank\">CAREER</a>\n                        <a class=\"text-link\" href=\"https://www.facebook.com/login.php\" target=\"_blank\">FACEBOOK</a>\n                        <a class=\"text-link\" href=\"https://www.instagram.com/accounts/login/\" target=\"_blank\">INSTAGRAM</a>\n                        <a class=\"text-link\" href=\"https://www.swiggy.com/privacy-policy\" target=\"_blank\">PRIVATE POLICY</a>\n                        <a class=\"text-link\" href=\"https://www.amazon.in/books/s?k=books\" target=\"_blank\">BOOKS</a>\n                        </div>\n                        ");
-  container.appendChild(newDiv);
-  return container;
+function createHeroPage() {
+  var hero = document.createElement('div');
+  hero.setAttribute('id', 'home-wrapper');
+  hero.innerHTML = "<nav class=\"navbar-home\">\n                        <div class=\"menu-wrapper\">\n                        <div class=\"menu\">\n                        <a class=\"menu-home\">Menu</a>\n                        <a href=\"https://form.jotform.com/222239259686467\" target=\"_blank\">Reservation</a>\n                        <a class=\"contact\">Contact</a>\n                        </div></div></nav>\n                        <div class=\"contain-wrapper home\">\n                        <h1 class=\"heading1 home\"><span class=\"word\">VOW</span><br>&nbsp;<span class=\"word\">CAFE</span></h1>\n                        <video id=\"video\" width=\"200\" height=\"400\"  autoplay=\"true\" loop=\"true\">\n                        <source src=\"".concat(_assets_students_in_cafe_mp4__WEBPACK_IMPORTED_MODULE_0__, "\" type=\"video/mp4\"></video></div>\n                        <div class=\"social-media\">\n                        <a class=\"text-link\" href=\"https://careers.swiggy.com/#/\" target=\"_blank\">CAREER</a>\n                        <a class=\"text-link\" href=\"https://www.facebook.com/login.php\" target=\"_blank\">FACEBOOK</a>\n                        <a class=\"text-link\" href=\"https://www.instagram.com/accounts/login/\" target=\"_blank\">INSTAGRAM</a>\n                        <a class=\"text-link\" href=\"https://www.swiggy.com/privacy-policy\" target=\"_blank\">PRIVATE POLICY</a>\n                        <a class=\"text-link\" href=\"https://www.amazon.in/books/s?k=books\" target=\"_blank\">BOOKS</a>\n                        </div>\n                        ");
+  return hero;
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHomePage);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHeroPage);
 
 /***/ }),
 
@@ -333,7 +325,6 @@ __webpack_require__.r(__webpack_exports__);
 // Wrap every letter in a span
 function createNavbar() {
   var navWrapper = document.getElementById('navbar-wrapper');
-  var content = document.getElementById('home-wrapper');
   var newDiv = document.createElement("div");
   newDiv.classList.add('navbar-nav');
   newDiv.innerHTML = "<div class='container'>\n                        <div class=\"menu-container\"><a href=\"https://form.jotform.com/222239259686467\" target=\"_blank\">Reservation</a></div>\n                        <a class=\"icon-wrapper\">\n                        <div class=\"icon-top\"></div>\n                        <div class=\"icon-bottom\"></div></a>\n                        <div class=\"menu-link-wrapper\">\n                        <div class=\"list-item first\"><a class=\"text-link first\" href=\"\">FOOD & DRINKS</a></div>\n                        <div class=\"list-item second\"><a class=\"text-link second\" href=\"\">LIBRARY</a></div>\n                        <div class=\"list-item third\"><a class=\"text-link third\" href=\"\">EVENTS</a></div>\n                        <div class=\"list-item forth\"><a class=\"text-link forth\" href=\"\">MUSIC STUDIO</a></div></div>\n                        <h2 class=\"menu-heading\">WOW<br>&nbsp;CAFE</h2>\n                        </div>";
@@ -1266,87 +1257,86 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var navContainer = document.getElementById('navbar-wrapper');
-var container = document.getElementById('content');
+var container = document.getElementById('content'); // Container for every page section in webpages
+
+(0,_navbar__WEBPACK_IMPORTED_MODULE_0__["default"])(); // Hidden Navbar which is permanent in every webpages
+
+container.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_1__["default"])()); // Add hero section to the container
+
+(0,_anime__WEBPACK_IMPORTED_MODULE_7__.headingAnimation)();
 var navbar = document.querySelector('.navbar');
-var homeBtn = document.querySelector('.home-btn');
 var navLinks = document.querySelectorAll('.list-item');
 
-function homePageLoader() {
-  (0,_navbar__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  (0,_home__WEBPACK_IMPORTED_MODULE_1__["default"])();
-  (0,_anime__WEBPACK_IMPORTED_MODULE_7__.headingAnimation)();
-  var menuItems = document.querySelector('.menu-home');
-  navLinks = document.querySelectorAll('.list-item');
-  container = document.getElementById('content');
-  navbar = document.querySelector('.navbar');
-  var menuBtn = document.querySelector('.menu-btn');
-  var menuBar = document.querySelector('.icon-wrapper');
+function navigateNavLinks() {
   var contactButton = document.querySelector('.contact');
-
-  function navigateLink() {
-    contactButton.addEventListener('click', function (e) {
+  contactButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    navbar.style.display = 'flex';
+    container.textContent = '';
+    container.appendChild((0,_contact__WEBPACK_IMPORTED_MODULE_2__["default"])());
+  });
+  navLinks.forEach(function (navLink, index) {
+    navLink.addEventListener('click', function (e) {
       e.preventDefault();
       navbar.style.display = 'flex';
       container.textContent = '';
-      container.appendChild((0,_contact__WEBPACK_IMPORTED_MODULE_2__["default"])());
-    });
-    navLinks.forEach(function (navLink, index) {
-      navLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        navbar.style.display = 'flex';
-        container.textContent = '';
-        (0,_anime__WEBPACK_IMPORTED_MODULE_7__.navbarCloseAnimation)();
-
-        if (index === 0) {
-          container.appendChild((0,_foods__WEBPACK_IMPORTED_MODULE_3__["default"])());
-          console.log(navLink);
-        } else if (index === 1) {
-          container.appendChild((0,_library__WEBPACK_IMPORTED_MODULE_5__["default"])());
-        } else if (index === 2) {
-          container.appendChild((0,_events__WEBPACK_IMPORTED_MODULE_6__["default"])());
-        } else {
-          container.appendChild((0,_music__WEBPACK_IMPORTED_MODULE_4__["default"])());
-        }
-      });
-    });
-  }
-
-  navigateLink();
-
-  function openMenu() {
-    menuItems.addEventListener('click', function (e) {
-      e.preventDefault();
-      (0,_anime__WEBPACK_IMPORTED_MODULE_7__.navbarAnimation)();
-    });
-    menuBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      (0,_anime__WEBPACK_IMPORTED_MODULE_7__.navbarAnimation)();
-    });
-  }
-
-  openMenu();
-
-  function closeMenu() {
-    menuBar.addEventListener('click', function (e) {
-      e.preventDefault();
       (0,_anime__WEBPACK_IMPORTED_MODULE_7__.navbarCloseAnimation)();
-    });
-  }
 
-  closeMenu();
+      if (index === 0) {
+        container.appendChild((0,_foods__WEBPACK_IMPORTED_MODULE_3__["default"])());
+      } else if (index === 1) {
+        container.appendChild((0,_library__WEBPACK_IMPORTED_MODULE_5__["default"])());
+      } else if (index === 2) {
+        container.appendChild((0,_events__WEBPACK_IMPORTED_MODULE_6__["default"])());
+      } else {
+        container.appendChild((0,_music__WEBPACK_IMPORTED_MODULE_4__["default"])());
+      }
+    });
+  });
 }
 
-homePageLoader();
-homeBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  navbar.style.display = 'none';
-  container.textContent = '';
-  navContainer.textContent = '';
-  homePageLoader();
-});
+navigateNavLinks();
+
+function openMenu() {
+  var menuItems = document.querySelector('.menu-home');
+  var menuBtn = document.querySelector('.menu-btn');
+  menuItems.addEventListener('click', function (e) {
+    e.preventDefault();
+    (0,_anime__WEBPACK_IMPORTED_MODULE_7__.navbarAnimation)();
+  });
+  menuBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    (0,_anime__WEBPACK_IMPORTED_MODULE_7__.navbarAnimation)();
+  });
+}
+
+openMenu();
+
+function closeMenu() {
+  var menuBar = document.querySelector('.icon-wrapper');
+  menuBar.addEventListener('click', function (e) {
+    e.preventDefault();
+    (0,_anime__WEBPACK_IMPORTED_MODULE_7__.navbarCloseAnimation)();
+  });
+}
+
+closeMenu();
+
+function backToHome() {
+  var homeBtn = document.querySelector('.home-btn');
+  homeBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    navbar.style.display = 'none';
+    container.textContent = '';
+    heroSectionLoader();
+    navigateNavLinks();
+    openMenu();
+  });
+}
+
+backToHome();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundleb917f9a28d2e7bc09c92.js.map
+//# sourceMappingURL=bundle3ef42854c3b7279a4039.js.map
