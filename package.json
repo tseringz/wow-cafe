@@ -9,6 +9,7 @@
     "dev": "webpack serve",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+
   },
   "repository": {
     "type": "git",
