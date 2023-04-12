@@ -84,7 +84,8 @@ function backToHome() {
         e.preventDefault();
         navbar.style.display = 'none';
         container.textContent = '';
-        heroSectionLoader();
+        container.appendChild(createHeroPage()); // Add hero section to the container
+        headingAnimation();
         navigateNavLinks();
         openMenu();
         });
