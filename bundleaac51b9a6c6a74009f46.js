@@ -1328,7 +1328,9 @@ function backToHome() {
     e.preventDefault();
     navbar.style.display = 'none';
     container.textContent = '';
-    heroSectionLoader();
+    container.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_1__["default"])()); // Add hero section to the container
+
+    (0,_anime__WEBPACK_IMPORTED_MODULE_7__.headingAnimation)();
     navigateNavLinks();
     openMenu();
   });
@@ -1339,4 +1341,4 @@ backToHome();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle3ef42854c3b7279a4039.js.map
+//# sourceMappingURL=bundleaac51b9a6c6a74009f46.js.map
